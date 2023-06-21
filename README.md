@@ -1,5 +1,10 @@
 # 基于本地知识库的 ChatGLM 等大语言模型应用实现
 
+## colab尝试
+有colab的同学可以直接在colab上尝试： <a href="https://colab.research.google.com/github/zhengr/langchain-ChatGLM/blob/master/langchain_chatglm_int4.ipynb">
+        <img alt="Build" src="https://colab.research.google.com/assets/colab-badge.svg">
+    </a>
+
 ## 介绍
 
 🌍 [_READ THIS IN ENGLISH_](README_en.md)
