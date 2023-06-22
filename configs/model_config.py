@@ -49,13 +49,13 @@ llm_model_dict = {
     "chatglm-6b-int8": {
         "name": "chatglm-6b-int8",
         "pretrained_model_name": "THUDM/chatglm-6b-int8",
-        "local_model_path": None,
+        "local_model_path": "/content/langchain-ChatGLM/chatglm-6b-int8",
         "provides": "ChatGLM"
     },
     "chatglm-6b": {
         "name": "chatglm-6b",
         "pretrained_model_name": "THUDM/chatglm-6b",
-        "local_model_path": None,
+        "local_model_path": "/content/langchain-ChatGLM/chatglm-6b",
         "provides": "ChatGLM"
     },
 
@@ -98,7 +98,7 @@ llm_model_dict = {
 }
 
 # LLM 名称
-LLM_MODEL = "chatglm-6b-int4"
+LLM_MODEL = "chatglm-6b-int8"
 # 量化加载8bit 模型
 LOAD_IN_8BIT = False
 # Load the model with bfloat16 precision. Requires NVIDIA Ampere GPU.
