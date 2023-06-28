@@ -34,6 +34,12 @@ EMBEDDING_DEVICE = "cuda" if torch.cuda.is_available() else "mps" if torch.backe
 # 如将 "chatglm-6b" 的 "local_model_path" 由 None 修改为 "User/Downloads/chatglm-6b"
 # 此处请写绝对路径
 llm_model_dict = {
+    "chatglm2-6b-int4": {
+        "name": "chatglm2-6b-int4",
+        "pretrained_model_name": "THUDM/chatglm2-6b-int4",
+        "local_model_path": "/content/langchain-ChatGLM/chatglm2-6b-int4",
+        "provides": "ChatGLM"
+    },
     "chatglm-6b-int4-qe": {
         "name": "chatglm-6b-int4-qe",
         "pretrained_model_name": "THUDM/chatglm-6b-int4-qe",
@@ -98,7 +104,7 @@ llm_model_dict = {
 }
 
 # LLM 名称
-LLM_MODEL = "chatglm-6b-int4"
+LLM_MODEL = "chatglm2-6b-int4"
 # 量化加载8bit 模型
 LOAD_IN_8BIT = False
 # Load the model with bfloat16 precision. Requires NVIDIA Ampere GPU.
